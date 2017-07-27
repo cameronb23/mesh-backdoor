@@ -1,0 +1,29 @@
+[
+  {
+  	"customer": {
+      "phone": "2077495373",
+    	"gender": "",
+    	"firstName": "Mark",
+    	"addresses": [{
+    		"locale": "us",
+    		"county": "California",
+    		"country": "United States",
+    		"address1": "3 Ashwell Road",
+    		"town": "Los Angeles",
+    		"postcode": "99991",
+    		"isPrimaryBillingAddress": true,
+    		"isPrimaryAddress": true
+    	}],
+    	"title": "",
+    	"email": "admin@google.com",
+    	"isGuest": true,
+    	"lastName": "Zuckerberg"
+    },
+    "card": {
+      "number": "card_number_here",
+      "expM": "expiration_month",
+      "expY": "expiration_year",
+      "cvv": "security_code"
+    }
+  }
+]

@@ -1,13 +1,23 @@
 const API = require('./api');
 
 function start() {
-  // add mars yard 2.0 sz 8.5 UK to cart :)
-  API.addToCart(sites.jdsports, 283271, 715251)
+  API.addToCart(API.Sites.footpatrol, 274768, 396198)
   .then((id) => {
     console.log(`Got a successful cart with ID: ${id}`);
+
+    let r = new API.Runner(API.Sites.footpatrol, id);
+
+    r.checkout()
+    .then((response) => {
+      console.log("Checkout response:");
+      console.log(response);
+    })
+    .catch((err) => {
+      console.log(err);
+    })
   })
   .catch((err) => {
-    console.log("Error adding to cart: ", err);
+    console.log(err);
   });
 }
 
